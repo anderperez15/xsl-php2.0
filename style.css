@@ -1,0 +1,22 @@
+.Tablaconcuadrcula-T table {
+    border: 1px solid #000;
+    max-width: 800px;
+ }
+.Tablaconcuadrcula-T  th {
+    padding: 0;
+    border: 1px solid #000;
+ }
+ .Tablaconcuadrcula-T  td{
+    padding: 0;
+    border: 1px solid #000;
+ }
+.Tablaconcuadrcula-T  p {
+    padding: 0px;
+    margin: 0;
+ }
+ ul.PrimerNivel > li{
+     list-style-type: upper-roman;
+ }
+ ul.segundolevel > li{
+    list-style-type: lower-latin;
+}
