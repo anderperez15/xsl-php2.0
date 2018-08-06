@@ -95,4 +95,8 @@ function refrescar (){
 }
 refrescar();
 </script>
+<style>
+    li{
+        margin:0;
+    }
 </html>

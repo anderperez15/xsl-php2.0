@@ -19,10 +19,13 @@
  }
  ul.segundolevel > li{
     list-style-type: lower-latin;
+    margin-left: 30px;
 }
 ul.tercerlevel > li{
     list-style-type: lower-roman;
+    margin-left: 40px;
 }
 ul.cuartolevel > li{
     list-style-type: decimal;
+    margin-left: 50px;
 }
