@@ -4561,7 +4561,7 @@
     </xsl:if>
     <xsl:if test="(w:pPr/w:pStyle/@w:val='Prrafodelista')">
       <xsl:choose>
-      <xsl:when test="(w:pPr/w:numPr/w:ilvl/@w:val='1') or (w:pPr/w:numPr/w:ilvl/@w:val='0') or (w:pPr/w:numPr/w:ilvl/@w:val='2')">
+      <xsl:when test="(w:pPr/w:numPr/w:ilvl/@w:val='1') or (w:pPr/w:numPr/w:ilvl/@w:val='0') or (w:pPr/w:numPr/w:ilvl/@w:val='2') or (w:pPr/w:numPr/w:ilvl/@w:val='3')">
         <li>
         <xsl:variable name="pStyleId">
           <xsl:call-template name="GetPStyleId"/>

@@ -20,3 +20,9 @@
  ul.segundolevel > li{
     list-style-type: lower-latin;
 }
+ul.tercerlevel > li{
+    list-style-type: lower-roman;
+}
+ul.cuartolevel > li{
+    list-style-type: decimal;
+}

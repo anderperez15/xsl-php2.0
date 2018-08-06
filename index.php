@@ -11,8 +11,7 @@ require "convert.php";
     <title>Document</title>
 </head>
 <?php
-    echo readDocx('archivos/ejemplo2.docx');
-    echo readDocx('archivos/ejemplo2.docx');
+    echo readDocx('archivos/ejemplo.docx');
 ?>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -52,7 +51,7 @@ function refrescar (){
     for (var i = 0; i < o.length; i++){
         var r = ["lista"+Math.round(Math.random()*10000000)];
         for( var n = 0; n < o[i].childNodes.length; n++){
-            if(o[i].childNodes[n].getAttribute('lvl') == "1" || o[i].childNodes[n].getAttribute('lvl') == "no"){
+            if(o[i].childNodes[n].getAttribute('lvl') == "1" || o[i].childNodes[n].getAttribute('lvl') == "no" || o[i].childNodes[n].getAttribute('lvl') == "2" || o[i].childNodes[n].getAttribute('lvl') == "3"){
                 o[i].childNodes[n].setAttribute("class",r[r.length -1]);
             } else {
                 r.push("lista"+Math.round(Math.random()*10000000))
@@ -62,7 +61,37 @@ function refrescar (){
             var l = "."+r[u]
             $( l ).wrapAll( "<ul class='segundolevel' />");
         }
-    }
+    };
+    var o = $(".segundolevel");
+    for (var i = 0; i < o.length; i++){
+        var r = ["lista"+Math.round(Math.random()*10000000)];
+        for( var n = 0; n < o[i].childNodes.length; n++){
+            if(o[i].childNodes[n].getAttribute('lvl') == "2" || o[i].childNodes[n].getAttribute('lvl') == "no" || o[i].childNodes[n].getAttribute('lvl') == "3"){
+                o[i].childNodes[n].setAttribute("class",r[r.length -1]);
+            } else {
+                r.push("lista"+Math.round(Math.random()*10000000))
+            }
+        };
+        for(var u = 0; u < r.length; u++){
+            var l = "."+r[u]
+            $( l ).wrapAll( "<ul class='tercerlevel' />");
+        }
+    };
+    var o = $(".tercerlevel");
+    for (var i = 0; i < o.length; i++){
+        var r = ["lista"+Math.round(Math.random()*10000000)];
+        for( var n = 0; n < o[i].childNodes.length; n++){
+            if(o[i].childNodes[n].getAttribute('lvl') == "3" || o[i].childNodes[n].getAttribute('lvl') == "no"){
+                o[i].childNodes[n].setAttribute("class",r[r.length -1]);
+            } else {
+                r.push("lista"+Math.round(Math.random()*10000000))
+            }
+        };
+        for(var u = 0; u < r.length; u++){
+            var l = "."+r[u]
+            $( l ).wrapAll( "<ul class='cuartolevel' />");
+        }
+    };
 }
 refrescar();
 </script>
